@@ -136,10 +136,10 @@
 				</configuration>
 			</plugin>
 			<plugin>
-<!-- 				<groupId>org.springframework.boot</groupId>
+				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
-				<version>3.4.5</version> -->
-				<configuration>
+				<version>3.4.5</version>
+<!-- 				<configuration>
 					<excludes>
 						<exclude>
 							<groupId>org.projectlombok</groupId>
@@ -147,7 +147,7 @@
 							<version>1.18.38</version>
 						</exclude>
 					</excludes>
-				</configuration>
+				</configuration> -->
 			</plugin>
 		</plugins>
 	</build>
