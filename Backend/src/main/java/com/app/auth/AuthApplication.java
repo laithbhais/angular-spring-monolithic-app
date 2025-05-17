@@ -8,12 +8,12 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 
 @EnableFeignClients
 @SpringBootApplication
-public class AuthApplication  { // extends SpringBootServletInitializer
+public class AuthApplication extends SpringBootServletInitializer {
 
-    // @Override
-    // protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
-    //     return application.sources(AuthApplication.class);
-    // }
+    @Override
+    protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
+        return application.sources(AuthApplication.class);
+    }
 
     public static void main(String[] args) {
         SpringApplication.run(AuthApplication.class, args);
