@@ -1,0 +1,41 @@
+<div class="card">
+  <div class="card-header">Login</div>
+  <div class="card-body">
+    <form [formGroup]="form">  
+      <div>
+        <label for="username">Username</label>
+        <input 
+          class="form-control" 
+          type="text" 
+          name="username" 
+          id="username" 
+          placeholder="Enter your username"
+          [(ngModel)]="loginData.username"
+          formControlName="username">
+      </div>
+      <div>
+        <label for="password">Password</label>
+        <input 
+          class="form-control"
+          type="password"
+          name="password"
+          id="password"
+          placeholder="Enter your Password"
+          [(ngModel)]="loginData.password"
+          formControlName="password">
+      </div>
+      <button class="btn btn-dark border" (click)="login()" [disabled]="form.invalid">Login</button>
+      <div class="text-center">
+        <p>Don't have an account? <a routerLink="/sign-up">Signup</a></p>
+      </div>
+      <div class="or-hr">
+        <hr>
+        <span>Or</span>
+      </div>
+      <button class="btn btn-light border" (click)="loginWithGoogle()">
+        <img src="assets/images/google.png" alt="Google">
+        Continue with Google
+      </button>
+    </form>
+  </div>
+</div>
