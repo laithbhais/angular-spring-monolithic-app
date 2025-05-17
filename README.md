@@ -1,4 +1,4 @@
-# Monolithic Web Application with Angular 17 and Spring Boot
+# Monolithic Web Application with Angular and Spring Boot
 
 *A secure, full-stack application featuring authentication (JWT + Google SSO) and Zoom meeting integration*
 
@@ -63,7 +63,7 @@ npm install
 ```
 
 
-### 1. Backend Setup
+### 3. Backend Setup
 ```bash
 # Navigate to backend directory 
 cd angular-spring-monolithic-app/backend
@@ -72,7 +72,7 @@ cd angular-spring-monolithic-app/backend
 mvn clean install
 ```
 
-### 2. Google OAuth Setup
+### 4. Google OAuth Setup
 1. Go to [Google Cloud Console](https://console.cloud.google.com/)
 2. Create a new project
 3. Navigate to "APIs & Services" > "Credentials"
@@ -81,7 +81,7 @@ mvn clean install
    - `http://localhost:8080/login/oauth2/code/google`
 6. Copy Client ID and Secret to backend properties
 
-### 3. Zoom API Setup
+### 5. Zoom API Setup
 1. Go to [Zoom Marketplace](https://marketplace.zoom.us/)
 2. Create a OAuth App
 3. Copy these credentials to your backend properties:
